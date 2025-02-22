@@ -301,13 +301,11 @@ nav{
 }
 .serv-card-hidden{
   display: grid;
-  max-height: 0;
   gap: 1rem;
   transition: all .5s ease;
   overflow: hidden;
 }
 .serv-card:hover .serv-card-hidden{
-  /* display: grid; */
   max-height: 1000px;
 
 }
@@ -896,7 +894,13 @@ padding-top: 20px;
   .serv-card h3{
     font-size: 1.8rem;
   }
- 
+  .serv-card-hidden{
+    max-height: 0;
+  }
+  .serv-card:hover .serv-card-hidden{
+    max-height: 1000px;
+  
+  }
   .info-sect{
     padding: 60px 40px;
     grid-template-columns: 1fr 1fr;
